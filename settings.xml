@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<settings_info>
+
+    <!--Количество месяцев, за которые скачивается статистика и время обновления данных с сайта и последующего переобечения алгоритма-->
+    <flashScoreSiteDownloader start_year="2020" init_load_data = "False"/>
+
+    <!--Название калькулятора-->
+    <calculator name = "StatisticsCalculatorOne"/>
+
+    <StatisticsCalculatorOne name = "StatisticsCalculatorOne"
+                   matchesWindowSize = "300"/>
+
+   <!--Название алгоритма-->
+    <algorithm name = "NeuralNetwork"/>
+
+    <NeuralNetwork name = "NeuralNetwork"
+                   epohs = "100"
+                   batch_size = "200"
+                   loss_function = "categorical_crossentropy"
+                   optimizator= "Adam"
+                   test_size = "0.5"
+                   scale = "True"
+                   suffle = "True"/>
+
+    <RandomForest name = "RandomForest"
+              n_estimators = "350"
+              max_depth = "10"
+              test_size = "0.3"
+              scale = "True"
+              suffle = "True"/>
+
+</settings_info>
+
+
+
+
+
+
